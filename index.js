@@ -5,9 +5,12 @@ function getFolderContents(folder, callback) {
     var rFolder = new XMLHttpRequest();
     rFolder.open("GET", folder, true);
     rFolder.overrideMimeType("text/html; UTF-8")
-    rFolder.send(null);
-    var ret = rFolder.responseText;
-    return ret.split('\n');
+    rFolder.onreadystatechange = function() {
+        if (rFolder.readyState === 4 && rFolder.status == "200") {
+            callback(rFolder.responseText);
+        }
+    }
+    rawFile.send(null);
 }
 
 function fillPaths(dr1, dr2){
