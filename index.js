@@ -4,13 +4,13 @@ var paths = {};
 function getFolderContents(folder, callback) {
     var rFolder = new XMLHttpRequest();
     rFolder.open("GET", folder, true);
-    rFolder.overrideMimeType("text/html; UTF-8")
+    //rFolder.overrideMimeType("text/html; UTF-8")
     rFolder.onreadystatechange = function() {
         if (rFolder.readyState === 4 && rFolder.status == "200") {
             callback(rFolder.responseText);
         }
     }
-    rawFile.send(null);
+    rFolder.send(null);
 }
 
 function fillPaths(dr1, dr2){
