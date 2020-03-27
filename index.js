@@ -17,7 +17,8 @@ function updatePaths() {
 }
 
 function generateImage(){
-    
+    updatePaths();
+    spriteimg.src = paths[Math.floor(Math.random()*paths.length)]
 }
 
 window.onload = function() {
