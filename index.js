@@ -19,5 +19,6 @@ function generateImage(){
 
 getFolderContents('./Sprites/_SAFE/', function(files){
     console.log(files);
+    console.log("beep");
 });
 generateImage();
