@@ -17,7 +17,7 @@ function generateImage(){
 
 }
 
-getFolderContents('./_SAFE/', function(files){
+getFolderContents('./Sprites/_SAFE/', function(files){
     console.log(files);
 });
 generateImage();
