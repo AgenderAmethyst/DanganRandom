@@ -3,18 +3,19 @@
         <meta charset="utf-8"/>
         <h1>Danganronpa Pride Generator</h1>
         <h2>By <a href="https://twitter.com/AgenderAmethyst">Amethyst</a> of The Root System ~ #</h2>
+        <script src='paths.js'></script>
         <script src='index.js'></script>
     </head>
     <div class="interface">
-        <input type="checkbox" id="dr1spoiler" name="dr1spoiler">
+        <input type="checkbox" id="dr1spoiler" name="dr1spoiler" onclick="updatePaths()">
         <label for="dr1spoiler">Include Danganronpa 1 spoilers</label>
-        <input type="checkbox" id="dr2spoiler" name="dr2spoiler">
+        <input type="checkbox" id="dr2spoiler" name="dr2spoiler" onclick="updatePaths()">
         <label for="dr2spoiler">Include Danganronpa 2 spoilers</label>
-        <button>Generate</button>
+        <button onclick="generateImage()">Generate</button>
     </div>
     <div class="output">
-        <img class="flag">
-        <img class="sprite">
+        <img id="flag">
+        <img id="sprite">
     </div>
     <footer>
         <p class="disclaimer">All Danganronpa sprite images are property of Spike-Chunsoft, we own nothing here.</p>

@@ -1,28 +1,23 @@
-
 var paths = {};
+var dr1button = document.getElementById(dr1spoiler);
+var dr2button = document.getElementById(dr2spoiler);
 
-function getFolderContents(folder, callback) {
-    var rFolder = new XMLHttpRequest();
-    rFolder.open("GET", folder, true);
-    //rFolder.overrideMimeType("text/html; UTF-8")
-    rFolder.onreadystatechange = function() {
-        if (rFolder.readyState === 4 && rFolder.status == "200") {
-            callback(rFolder.responseText);
-        }
+var flagimg = document.getElementById(flag);
+var spriteimg = document.getElementById(sprite);
+
+function updatePaths() {
+    paths = safe_paths;
+    if (dr1button.checked){
+        paths.push(dr1_paths);
     }
-    rFolder.send(null);
-}
-
-function fillPaths(dr1, dr2){
-
+    if (dr2button.checked){
+        paths.push(dr2_paths);
+    }
+    console.log(paths)
 }
 
 function generateImage(){
-
+    
 }
 
-getFolderContents('./Sprites/_SAFE/', function(files){
-    console.log(files);
-    console.log("beep");
-});
 generateImage();
