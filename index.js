@@ -1,6 +1,6 @@
 var paths = {};
-var dr1button = document.getElementById(dr1spoiler);
-var dr2button = document.getElementById(dr2spoiler);
+var dr1button = document.getElementById("dr1spoiler");
+var dr2button = document.getElementById("dr2spoiler");
 
 var flagimg = document.getElementById(flag);
 var spriteimg = document.getElementById(sprite);
