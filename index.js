@@ -13,12 +13,12 @@ function updatePaths() {
     if (dr2button.checked){
         paths = paths.concat(dr2_paths);
     }
-    console.log(paths)
 }
 
 function generateImage(){
     updatePaths();
     spriteimg.src = paths[Math.floor(Math.random()*paths.length)]
+    flagimg.src = flag_paths[Math.floor(Math.random()*flag_paths.length)]
 }
 
 window.onload = function() {
