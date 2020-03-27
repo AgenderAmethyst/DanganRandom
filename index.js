@@ -8,10 +8,10 @@ var spriteimg;
 function updatePaths() {
     paths = safe_paths;
     if (dr1button.checked){
-        paths.push(dr1_paths);
+        paths.concat(dr1_paths);
     }
     if (dr2button.checked){
-        paths.push(dr2_paths);
+        paths.concat(dr2_paths);
     }
     console.log(paths)
 }
