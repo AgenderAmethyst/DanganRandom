@@ -4,7 +4,7 @@ var paths = {};
 function getFolderContents(folder, callback) {
     var rFolder = new XMLHttpRequest();
     rFolder.open("GET", folder, true);
-    rFolder.overrideMimeType("text/html")
+    rFolder.overrideMimeType("text/html; UTF-8")
     rFolder.send(null);
     var ret = rFolder.responseText;
     return ret.split('\n');
