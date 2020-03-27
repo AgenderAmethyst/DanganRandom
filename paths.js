@@ -743,4 +743,4 @@ var dr2_paths = [
     "Sprites/_SPOILERS_DR2/Robonidai_(9).png"
   ]
 
-var flag_paths = ["flags/lesbian.png"]
+var flag_paths = ["flags/lesbian.png", "flags/bi.png", "flags/trans.png", "flags/ace.png", "flags/aro.png", "flags/agender.png", "flags/gfluid.png", "flags/gqueer.png", "flags/gay.png", "flags/nb.png", "flags/pan.png", "flags/polysexual.png"]

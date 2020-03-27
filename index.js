@@ -27,6 +27,6 @@ window.onload = function() {
 
     flagimg = document.getElementById("flag");
     spriteimg = document.getElementById("sprite");
+    generateImage();
 }
 
-generateImage();
