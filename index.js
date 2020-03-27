@@ -1,9 +1,9 @@
 var paths = {};
-var dr1button = document.getElementById('dr1spoiler');
-var dr2button = document.getElementById("dr2spoiler");
+var dr1button;
+var dr2button;
 
-var flagimg = document.getElementById("flag");
-var spriteimg = document.getElementById("sprite");
+var flagimg;
+var spriteimg;
 
 function updatePaths() {
     paths = safe_paths;
@@ -18,6 +18,14 @@ function updatePaths() {
 
 function generateImage(){
     
+}
+
+window.onload = function() {
+    dr1button = document.getElementById('dr1spoiler');
+    dr2button = document.getElementById("dr2spoiler");
+
+    flagimg = document.getElementById("flag");
+    spriteimg = document.getElementById("sprite");
 }
 
 generateImage();
