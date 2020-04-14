@@ -13,12 +13,14 @@
 	overflow-x:hidden;
 	width:280px;
 	height:280px;
+	margin: 0 auto;
 }
 
 html{
 	font-family: 'Roboto Mono';font-size: 22px;
 	background: #333333;
 	color: #EEEEEE;
+	text-align: center;
 }
 
 a {

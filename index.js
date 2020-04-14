@@ -5,6 +5,9 @@ var dr2button;
 var flagimg;
 var spriteimg;
 
+var holdflag;
+var holdsprite;
+
 function updatePaths() {
     paths = safe_paths;
     if (dr1button.checked){
@@ -17,8 +20,12 @@ function updatePaths() {
 
 function generateImage(){
     updatePaths();
-    spriteimg.src = paths[Math.floor(Math.random()*paths.length)]
-    flagimg.src = flag_paths[Math.floor(Math.random()*flag_paths.length)]
+    if (!holdsprite.checked){
+    	spriteimg.src = paths[Math.floor(Math.random()*paths.length)]
+    }
+    if (!holdflag.checked){
+    	flagimg.src = flag_paths[Math.floor(Math.random()*flag_paths.length)]
+    }
 }
 
 window.onload = function() {
@@ -27,6 +34,9 @@ window.onload = function() {
 
     flagimg = document.getElementById("flag");
     spriteimg = document.getElementById("sprite");
+
+    holdflag = document.getElementById("holdflag");
+    holdsprite = document.getElementById("holdsprite");
     generateImage();
 }
 
