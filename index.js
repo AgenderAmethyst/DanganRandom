@@ -37,6 +37,12 @@ window.onload = function() {
 
     holdflag = document.getElementById("holdflag");
     holdsprite = document.getElementById("holdsprite");
+
+    dr1button.checked = false;
+    dr2button.checked = false;
+    holdsprite.checked = false;
+    holdflag.checked = false;
+
     generateImage();
 }
 
